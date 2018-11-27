@@ -21,3 +21,22 @@ Step 2. Add the dependency
 	dependencies {
 	        implementation 'com.github.callmetang:SelectPicture:v0.0.5'
 	}
+
+Step 3. Open activity
+ 	Intent intent = new Intent(this, SelectPictureActivity.class);
+        intent.putExtra("maxCount", 9);
+        startActivityForResult(intent, 100);
+
+Step 4. Callback
+   @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == 100 && resultCode == SelectPictureActivity.RESULT_CODE_SELECT_FINISH) {
+            if (data != null) {
+                ArrayList<PictureBean> imgs = data.getParcelableArrayListExtra("imgs");
+                Log.d("MainActivity", "imgs:" + imgs);
+
+                mText.setText(imgs.toString());
+            }
+        }
+    }
