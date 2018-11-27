@@ -1,4 +1,8 @@
 # SelectPicture
+
+imgs:
+![images](SelectPicture/imgs/device-2018-11-27-112320.png)
+
 How to
 To get a Git project into your build:
 
