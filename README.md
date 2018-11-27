@@ -3,8 +3,9 @@
 imgs:
 
 
-	![images](https://github.com/callmetang/SelectPicture/blob/master/imgs/device-2018-11-27-112320.png)
-	![images](https://github.com/callmetang/SelectPicture/blob/master/imgs/device-2018-11-27-112430.png)
+![images](https://github.com/callmetang/SelectPicture/blob/master/imgs/device-2018-11-27-112320.png)
+
+![images](https://github.com/callmetang/SelectPicture/blob/master/imgs/device-2018-11-27-112430.png)
 
 How to
 To get a Git project into your build:
