@@ -1,0 +1,10 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="frame.android.com.selectpicturelibrary">
+
+    <application>
+
+        <activity
+            android:name="frame.android.com.selectpicturelibrary.img.SelectPictureActivity"
+            android:screenOrientation="portrait" />
+    </application>
+</manifest>
