@@ -24,7 +24,6 @@ Step 2. Add the dependency
 
 Step 3. Open activity
 
- 	
 	Intent intent = new Intent(this, SelectPictureActivity.class);
         intent.putExtra("maxCount", 9);
         startActivityForResult(intent, 100);
@@ -36,8 +35,8 @@ Step 4. Callback
 			super.onActivityResult(requestCode, resultCode, data);
 			if (requestCode == 100 && resultCode == SelectPictureActivity.RESULT_CODE_SELECT_FINISH) {
 				if (data != null) {
-				ArrayList<PictureBean> imgs = data.getParcelableArrayListExtra("imgs");
-				Log.d("MainActivity", "imgs:" + imgs); 
+					ArrayList<PictureBean> imgs = data.getParcelableArrayListExtra("imgs");
+					Log.d("MainActivity", "imgs:" + imgs); 
 				}
 			}
 	    }
