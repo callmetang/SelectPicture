@@ -30,13 +30,14 @@ Step 3. Open activity
 
 Step 4. Callback
  
-	   @Override
-	    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
-			super.onActivityResult(requestCode, resultCode, data);
-			if (requestCode == 100 && resultCode == SelectPictureActivity.RESULT_CODE_SELECT_FINISH) {
-				if (data != null) {
-					ArrayList<PictureBean> imgs = data.getParcelableArrayListExtra("imgs");
-					Log.d("MainActivity", "imgs:" + imgs); 
-				}
-			}
-	    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == 100 && resultCode == SelectPictureActivity.RESULT_CODE_SELECT_FINISH) {
+            if (data != null) {
+                ArrayList<PictureBean> imgs = data.getParcelableArrayListExtra("imgs");
+                Log.d("MainActivity", "imgs:" + imgs);
+            }
+        }
+    }
