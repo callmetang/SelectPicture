@@ -30,7 +30,7 @@ Step 2. Add the dependency
 	        implementation 'com.github.callmetang:SelectPicture:v0.0.6'
 	}
 
-Step 3. Open activity
+Step 3. Start
 	
 	Intent intent = new Intent(this, SelectPictureActivity.class);
 	intent.putExtra("maxCount", 9);
